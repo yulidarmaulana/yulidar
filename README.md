@@ -1,6 +1,6 @@
 # 👨‍🚀 Yulidar - Portfolio
 
-![Template](https://github.com/yulidarmaulana/yulidar/public/preview-porto.png)
+![Template](/public/preview-porto.png)
 
 This theme/template is designed and crafted by [me](https://github.com/yulidarmaulana).
 NB: Additional color themes can also be configured on the `src/data/theme.ts` file.
