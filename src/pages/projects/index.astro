@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import formatDate from "@/utils/formatDate";
+import Link from "@/components/shared/Link.astro";
+
+import ProjectCard from "@/components/ProjectCard.astro";
+import projects from "@/data/projects";
+
+
+const posts = (await getCollection("posts")).sort(function (first, second) {
+  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
+});
+---
+
+<Layout title="Template - All Posts">
+  <main class="flex flex-col gap-20">
+    
+    <header class="flex w-full flex-row justify-between">
+      <h3 class="text-2xl text-neutral-100">Project.</h3>
+      <Link href="/" label="Back" target="_self" />
+    </header>
+
+    <article class="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+      {
+        projects.length !== 0 &&
+          projects.map((project) => <ProjectCard {...project} />)
+      }
+    </article>
+  </main>
+</Layout>
