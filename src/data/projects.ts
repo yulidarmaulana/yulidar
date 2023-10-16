@@ -26,6 +26,12 @@ const projects: Project[] = [
     link: "https://bookshelf-app-six.vercel.app/",
   },
   {
+    title: "Valorant API",
+    techs: ["Javascript"],
+    github: "https://github.com/yulidarmaulana/valorant",
+    link: "https://valorant-gold.vercel.app/",
+  },
+  {
     title: "",
     techs: [""],
     link: "/",
