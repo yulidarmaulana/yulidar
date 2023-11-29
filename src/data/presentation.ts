@@ -15,7 +15,7 @@ type Presentation = {
 
 const presentation: Presentation = {
   mail: "maulanayulidar@gmail.com",
-  title: "< Hello World! />",
+  title: "Yulidar Maulana",
   // profile: "/profile.webp",
   description:
     "Hi, I'm Yulidar Maulana, a *front-end developer* based in Indonesia. My current focus is developing applications using *JavaScript* and *React*. Outside of work, I m constantly learning new things.",

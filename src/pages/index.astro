@@ -13,10 +13,14 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
 import experience from "@/data/experience";
+import moment from "moment";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
 });
+
+ 
+
 ---
 
 <Layout>
@@ -69,15 +73,15 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       </section>
     </article>
 
-     <article class="flex flex-col gap-8">
+     <!-- <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">Latest posts</h3>
-        <!-- <Link href="/posts" label="See all posts" isUnderline target="_self" /> -->
+        <Link href="/posts" label="See all posts" isUnderline target="_self" />
       </header>
-      <!-- {posts.length === 0 && <p>Soon, stay connected 👀...</p>} -->
+      {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
       <h5 class="text-sm text-neutral-100">Soon, stay connected 👀...</h5>
 
-      <!-- <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
         {
           posts.length !== 0 &&
             posts
@@ -91,8 +95,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
                 />
               ))
         }
-      </section> -->
-    </article>
+      </section>
+    </article> -->
 
     <!-- <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
@@ -106,8 +110,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       </p>
 
       <SocialLinks />
-    </article> -->
-
+    </article> -->    
+    
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
@@ -123,6 +127,25 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             experience.map((experience) => <ExperienceCard {...experience} />)
         }
       </section>
+    </article>
+
+    
+
+    <article class="relative flex justify-between">
+      <p class="text-text/50">© {new Date().getFullYear()}</p>
+      <p>{moment().format("dddd - MMM Do")}</p>
+
+      <script type="text/javascript" charset="utf-8">
+        let a;
+        let time;
+        setInterval(() => {
+          a = new Date();
+          time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+          document.getElementById('time').innerHTML = time;
+        }, 10);
+      </script>
+
+      <span id="time"></span>
     </article>
   </main>
 </Layout>

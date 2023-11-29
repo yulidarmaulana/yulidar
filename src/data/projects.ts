@@ -14,10 +14,10 @@ const projects: Project[] = [
     link: "https://yulidarmaulana.github.io/Al-Quran-Online/",
   },
   {
-    title: "QR Code Generator",
-    techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/Generate_QR_CODE_JS",
-    link: "https://generate-qr-code-js.vercel.app/",
+    title: "Github User Finder",
+    techs: ["React"],
+    github: "https://github.com/yulidarmaulana/github-user-finder",
+    link: "https://github-user-finder-sigma-gray.vercel.app/",
   },
   {
     title: "Books Todo List",
@@ -30,6 +30,12 @@ const projects: Project[] = [
     techs: ["Javascript"],
     github: "https://github.com/yulidarmaulana/valorant",
     link: "https://valorant-gold.vercel.app/",
+  },
+  {
+    title: "QR Code Generator",
+    techs: ["Javascript"],
+    github: "https://github.com/yulidarmaulana/Generate_QR_CODE_JS",
+    link: "https://generate-qr-code-js.vercel.app/",
   },
   {
     title: "",

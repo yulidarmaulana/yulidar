@@ -6,6 +6,7 @@ import Link from "@/components/shared/Link.astro";
 
 import ProjectCard from "@/components/ProjectCard.astro";
 import projects from "@/data/projects";
+import moment from "moment";
 
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
@@ -18,7 +19,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     
     <header class="flex w-full flex-row justify-between">
       <h3 class="text-2xl text-neutral-100">Project.</h3>
-      <Link href="/" label="Back" target="_self" />
+      <Link href="/" label="<< Back"  target="_self"  />
     </header>
 
     <article class="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
@@ -27,5 +28,23 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
           projects.map((project) => <ProjectCard {...project} />)
       }
     </article>
+
+    <script type="text/javascript" charset="utf-8">
+      let a;
+      let time;
+      setInterval(() => {
+        a = new Date();
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time;
+      }, 10);
+    </script>
   </main>
+  
 </Layout>
+
+<article class="relative flex justify-between mt-auto">
+  <p class="text-text/50">© {new Date().getFullYear()}</p>
+  <p>{moment().format("dddd MMM Do")}</p>
+  <p id="time"></p>
+  <!-- <p>{new Date().toLocaleTimeString()}</p> -->
+</article>

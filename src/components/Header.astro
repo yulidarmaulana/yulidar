@@ -6,15 +6,23 @@ const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
 
 <header class="z-40 flex w-full flex-row justify-between gap-2 md:flex-row md:justify-between">
-  <a href={`mailto:${presentation.mail}`} class="hover:text-neutral-100"
+  <!-- <a href={`mailto:${presentation.mail}`} class="hover:text-neutral-100"
     >{presentation.mail}</a
-  >
+  > -->
+
+  <style>
+    img {
+    filter: invert(1); /* Membalikkan warna ikon */
+  }
+  </style>
+
+  <img src="https://unpkg.com/lucide-static@latest/icons/code-2.svg" />
 
   <nav role="navigation">
     <ul role="list" class="flex flex-row gap-2">
       <li>
         <a
-          href="/"
+          href="https://github.com/yulidarmaulana" target="_blank"
           class:list={{
             ["hover:text-neutral-100 text-xl"]: true,
             ["text-neutral-100"]: pathname === "/",
