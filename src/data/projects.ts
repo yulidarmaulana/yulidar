@@ -14,10 +14,10 @@ const projects: Project[] = [
     link: "https://yulidarmaulana.github.io/Al-Quran-Online/",
   },
   {
-    title: "Github User Finder",
+    title: "Anymelist",
     techs: ["React"],
-    github: "https://github.com/yulidarmaulana/github-user-finder",
-    link: "https://github-user-finder-sigma-gray.vercel.app/",
+    github: "https://github.com/yulidarmaulana/anymelist",
+    link: "https://anymelist.vercel.app/",
   },
   {
     title: "Books Todo List",
