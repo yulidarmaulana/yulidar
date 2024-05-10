@@ -31,19 +31,13 @@ const projects: Project[] = [
     github: "https://github.com/yulidarmaulana/valorant",
     link: "https://valorant-gold.vercel.app/",
   },
-  {
-    title: "QR Code Generator",
-    techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/Generate_QR_CODE_JS",
-    link: "https://generate-qr-code-js.vercel.app/",
-  },
-  {
-    title: "",
-    techs: [""],
-    link: "/",
-    github: "/",
-    isComingSoon: true,
-  },
+  // {
+  //   title: "",
+  //   techs: [""],
+  //   link: "/",
+  //   github: "/",
+  //   isComingSoon: false,
+  // },
 ];
 
 export default projects;

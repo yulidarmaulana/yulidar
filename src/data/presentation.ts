@@ -25,10 +25,6 @@ const presentation: Presentation = {
       link: "https://twitter.com/codepleasure",
     },
     {
-      label: "Github",
-      link: "https://github.com/yulidarmaulana",
-    },
-    {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/yulidar-maulana/",
     }

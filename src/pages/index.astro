@@ -58,10 +58,13 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
-          Featured Projects ({projects.length})
-        </h3>
-        <Link href="/projects" label="see all" isUnderline target="_self" />
+        <div class="">
+          <h3 class="text-lg text-neutral-100">
+            Projects
+          </h3>
+          <h6>Unveiling My Work: Projects that Shape My Learning Experience</h6>
+        </div>
+        <!-- <Link href="/projects" label="see all" isUnderline target="_self" /> -->
       </header>
       {projects.length === 0 && <p>Oops, I must work</p>}
 
@@ -112,12 +115,12 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       <SocialLinks />
     </article> -->    
     
-    <article class="flex flex-col gap-8">
+    <!-- <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
         <h3 class="text-lg text-neutral-100">
           Experiences ({experience.length})
         </h3>
-        <!-- <Link href="/experience" label="see all" isUnderline target="_self" /> -->
+        <Link href="/experience" label="see all" isUnderline target="_self" />
       </header>
       {experience.length === 0 && <p>Oops, I must work 🤣</p>}
 
@@ -127,25 +130,27 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
             experience.map((experience) => <ExperienceCard {...experience} />)
         }
       </section>
-    </article>
+    </article> -->
 
     
 
-    <article class="relative flex justify-between">
-      <p class="text-text/50">© {new Date().getFullYear()}</p>
-      <p>{moment().format("dddd - MMM Do")}</p>
-
-      <script type="text/javascript" charset="utf-8">
-        let a;
-        let time;
-        setInterval(() => {
-          a = new Date();
-          time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
-          document.getElementById('time').innerHTML = time;
-        }, 10);
-      </script>
-
-      <span id="time"></span>
-    </article>
   </main>
+
+  
+  <article class="relative flex justify-between mt-auto">
+    <p class="text-text/50">© {new Date().getFullYear()}</p>
+    <p>{moment().format("dddd - MMM Do")}</p>
+
+    <script type="text/javascript" charset="utf-8">
+      let a;
+      let time;
+      setInterval(() => {
+        a = new Date();
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        document.getElementById('time').innerHTML = time;
+      }, 10);
+    </script>
+
+    <span id="time"></span>
+  </article>
 </Layout>
