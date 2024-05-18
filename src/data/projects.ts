@@ -8,10 +8,10 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Al-Quran",
+    title: "Valorant API",
     techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/Al-Quran-Online",
-    link: "https://yulidarmaulana.github.io/Al-Quran-Online/",
+    github: "https://github.com/yulidarmaulana/valorant",
+    link: "https://valorant-gold.vercel.app/",
   },
   {
     title: "Anymelist",
@@ -19,24 +19,24 @@ const projects: Project[] = [
     github: "https://github.com/yulidarmaulana/anymelist",
     link: "https://anymelist.vercel.app/",
   },
+  // {
+  //   title: "Books Todo List",
+  //   techs: ["Javascript"],
+  //   github: "https://github.com/yulidarmaulana/bookshelf-app",
+  //   link: "https://bookshelf-app-six.vercel.app/",
+  // },
   {
-    title: "Books Todo List",
-    techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/bookshelf-app",
-    link: "https://bookshelf-app-six.vercel.app/",
-  },
-  {
-    title: "Valorant API",
-    techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/valorant",
-    link: "https://valorant-gold.vercel.app/",
+    title: "Hacker News",
+    techs: ["React, Typescipt"],
+    github: "https://github.com/yulidarmaulana/hacker-news",
+    link: "https://hacker-news-six-alpha.vercel.app/",
   },
   // {
   //   title: "",
   //   techs: [""],
   //   link: "/",
   //   github: "/",
-  //   isComingSoon: false,
+  //   isComingSoon: true,
   // },
 ];
 
