@@ -20,13 +20,17 @@ const presentation: Presentation = {
   description:
     "Hi, I'm Yulidar Maulana, a *front-end developer* based in Indonesia. My current focus is developing applications using *JavaScript* and *React*. Outside of work, I m constantly learning new things.",
   socials: [
-    {
-      label: "X",
-      link: "https://twitter.com/codepleasure",
-    },
+    // {
+    //   label: "X",
+    //   link: "https://twitter.com/codepleasure",
+    // },
     {
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/yulidar-maulana/",
+    },
+    {
+      label: "Dribbble",
+      link: "https://dribbble.com/Yulidar",
     }
   ],
 };

@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html.dark {
+  background-color: #0D0F14;
+  /* color: #f5f5f5; */
+}
+
+html {
+  background-color: #F2F5F9;
+  color: #0D0F14;
+}
+
+/* .dark .nav-links a {
+  color: #f5f5f5;
+} */

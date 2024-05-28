@@ -24,7 +24,7 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 ---
 
 <Layout>
-  <main class="flex flex-col gap-20">
+  <main class="flex flex-col gap-20 ">
     <article
       class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12 font-normal"
     >
@@ -41,12 +41,12 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       }
 
       <div class="flex flex-col gap-8">
-        <h1 class="text-3xl text-neutral-100">
+        <h1 class="text-3xl text-neutral-400">
           {presentation.title}
         </h1>
 
         <h2
-          class="w-auto max-w-[100ch] leading-6"
+          class="w-auto max-w-[100ch] leading-6 text-neutral-300 dark:text-neutral-500"
           set:html={convertAsteriskToStrongTag(presentation.description)}
         />
 
@@ -55,11 +55,10 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
     </article>
 
    
-
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
+      <header class="flex w-full flex-wrap justify-between gap-2 text-neutral-400">
         <div class="">
-          <h3 class="text-lg text-neutral-100">
+          <h3 class="text-lg">
             Projects
           </h3>
           <h6>Unveiling My Work: Projects that Shape My Learning Experience</h6>
@@ -138,8 +137,8 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
 
   
   <article class="relative flex justify-between mt-auto">
-    <p class="text-text/50">© {new Date().getFullYear()}</p>
-    <p>{moment().format("dddd - MMM Do")}</p>
+    <p class="text-neutral-500">© {new Date().getFullYear()}</p>
+    <p class="text-neutral-500">{moment().format("dddd - MMM Do")}</p>
 
     <script type="text/javascript" charset="utf-8">
       let a;
@@ -151,6 +150,6 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
       }, 10);
     </script>
 
-    <span id="time"></span>
+    <span class="text-neutral-500" id="time"></span>
   </article>
 </Layout>

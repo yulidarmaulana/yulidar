@@ -15,21 +15,33 @@ const projects: Project[] = [
   },
   {
     title: "Anymelist",
-    techs: ["React"],
+    techs: ["React, Javascript"],
     github: "https://github.com/yulidarmaulana/anymelist",
     link: "https://anymelist.vercel.app/",
   },
-  // {
-  //   title: "Books Todo List",
-  //   techs: ["Javascript"],
-  //   github: "https://github.com/yulidarmaulana/bookshelf-app",
-  //   link: "https://bookshelf-app-six.vercel.app/",
-  // },
   {
     title: "Hacker News",
     techs: ["React, Typescipt"],
     github: "https://github.com/yulidarmaulana/hacker-news",
     link: "https://hacker-news-six-alpha.vercel.app/",
+  },
+  {
+    title: "Books Todo List",
+    techs: ["Javascript"],
+    github: "https://github.com/yulidarmaulana/bookshelf-app",
+    link: "https://bookshelf-app-six.vercel.app/",
+  },
+  {
+    title: "Github Finder",
+    techs: ["React, Javascript"],
+    github: "https://github.com/yulidarmaulana/github-user-finder",
+    link: "https://github-user-finder-sigma-gray.vercel.app/",
+  },
+  {
+    title: "Al-Quran Online",
+    techs: ["Javascript"],
+    github: "https://github.com/yulidarmaulana/Al-Quran-Online",
+    link: "https://yulidarmaulana.github.io/Al-Quran-Online/",
   },
   // {
   //   title: "",
