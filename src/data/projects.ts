@@ -8,10 +8,10 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "Valorant API",
-    techs: ["Javascript"],
-    github: "https://github.com/yulidarmaulana/valorant",
-    link: "https://valorant-gold.vercel.app/",
+    title: "Basic React",
+    techs: ["React, Typescipt"],
+    github: "https://github.com/yulidarmaulana/basic-react",
+    link: "https://basic-react-flame.vercel.app/",
   },
   {
     title: "Anymelist",
@@ -32,10 +32,10 @@ const projects: Project[] = [
     link: "https://bookshelf-app-six.vercel.app/",
   },
   {
-    title: "Github Finder",
-    techs: ["React, Javascript"],
-    github: "https://github.com/yulidarmaulana/github-user-finder",
-    link: "https://github-user-finder-sigma-gray.vercel.app/",
+    title: "Valorant API",
+    techs: ["Javascript"],
+    github: "https://github.com/yulidarmaulana/valorant",
+    link: "https://valorant-gold.vercel.app/",
   },
   {
     title: "Al-Quran Online",
